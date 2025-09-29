@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smart Class Management System Design System
+All colors MUST be HSL. Educational theme with professional blues and emerald accents.
+*/
+
+@layer base {
+  :root {
+    /* Educational Primary Colors */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    --primary: 222 78% 25%;         /* Deep education blue */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 158 64% 52%;           /* Emerald accent for success states */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 222 78% 25%;
+
+    /* Educational specific colors */
+    --student: 197 71% 52%;          /* Sky blue for students */
+    --student-foreground: 0 0% 98%;
+    
+    --teacher: 271 76% 53%;          /* Purple for teachers */
+    --teacher-foreground: 0 0% 98%;
+    
+    --admin: 0 72% 51%;              /* Red for admin */
+    --admin-foreground: 0 0% 98%;
+    
+    --success: 158 64% 52%;          /* Green for success */
+    --success-foreground: 0 0% 98%;
+    
+    --warning: 43 96% 56%;           /* Yellow for warnings */
+    --warning-foreground: 222 84% 4.9%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(222 78% 25%), hsl(222 78% 35%));
+    --gradient-accent: linear-gradient(135deg, hsl(158 64% 52%), hsl(158 64% 62%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 78% 25%), hsl(271 76% 53%));
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(222 78% 25% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(222 78% 25% / 0.1), 0 2px 4px -1px hsl(222 78% 25% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(222 78% 25% / 0.1), 0 4px 6px -2px hsl(222 78% 25% / 0.05);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 84% 4.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 222 84% 4.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 84% 4.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 222 78% 45%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 158 64% 52%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 222 78% 45%;
+
+    /* Dark mode educational colors */
+    --student: 197 71% 52%;
+    --student-foreground: 0 0% 98%;
+    
+    --teacher: 271 76% 53%;
+    --teacher-foreground: 0 0% 98%;
+    
+    --admin: 0 72% 51%;
+    --admin-foreground: 0 0% 98%;
+    
+    --success: 158 64% 52%;
+    --success-foreground: 0 0% 98%;
+    
+    --warning: 43 96% 56%;
+    --warning-foreground: 222 84% 4.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
